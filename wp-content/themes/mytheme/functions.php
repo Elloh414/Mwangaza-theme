@@ -1,5 +1,13 @@
 <?php
 
+
+//For adding dynamic title tag support
+function load_titles(){
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme','load_titles');
+
 // Load stylesheets
 
 //we create a hook, that hooks onto the wp_head and adds the stylesheets there
